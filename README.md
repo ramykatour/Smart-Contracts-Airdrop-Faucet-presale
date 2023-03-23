@@ -1,5 +1,6 @@
 # Smart-Contracts-Airdrop-Faucet-pesale-
- don't forget to like 
+ Don't Forget To Like 
+ RamyKatour
 ## Airdrop
 This smart contract takes in two parameters: the IERC20 token that will be airdropped and the limit of tokens that can be claimed by each wallet address.
 The claim function can be called by anyone to claim the airdropped tokens. It first checks if the caller has already received tokens by checking the hasReceived mapping. If the caller has already received tokens, the function will revert with an error message.
@@ -19,3 +20,7 @@ buyTokens(): the function that allows buyers to purchase tokens using ether, sub
 withdraw(): the function that allows the contract owner to withdraw any ether in the contract
 getTokenBalance(): a function that returns the current balance of the token in the contract
 getContractBalance(): a function that returns the current balance of ether in the contract
+## Token 
+This smart contract defines a token with a name, symbol, and decimals properties, as well as a totalSupply variable to keep track of the total number of tokens in existence.
+The balanceOf mapping keeps track of the balance of each account, and the allowance mapping keeps track of the amount that one account is allowed to spend on behalf of another account.
+The transfer, approve, and transferFrom functions allow for the transfer of tokens between accounts, while the burn and mint functions allow for the burning and minting of tokens, respectively.
